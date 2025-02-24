@@ -14,3 +14,4 @@ warnings.log
 
 # workspace
 .idea/
+.codegpt

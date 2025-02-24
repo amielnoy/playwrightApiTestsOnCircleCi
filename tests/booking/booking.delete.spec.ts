@@ -4,14 +4,26 @@ import { test, expect } from "@playwright/test";
 import { getBookingSummary, createFutureBooking } from "@datafactory/booking";
 import { createRoom } from "@datafactory/room";
 import { createHeaders } from "@helpers/createHeaders";
-import { HttpCodes } from "../../data/global-constans";
+import { HttpCodes } from "../../global-data/global-constans";
 
 test.describe("booking/{id} DELETE requests @booking", async () => {
   let headers;
   let bookingId;
   let roomId;
 
+  let request: string | null = null;
+  request = "DELETE /booking/999999";
+  console.log(request);
+
+  const myConstString = "Hello World";
+
   test.beforeAll(async () => {
+    let myString: string = myConstString;
+    console.log(myString);
+
+
+    myString = "Hello World";
+
     headers = await createHeaders();
   });
 

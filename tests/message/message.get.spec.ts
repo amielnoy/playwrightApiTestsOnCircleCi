@@ -6,7 +6,7 @@ import { test, expect } from "@fixtures/fixtures";
 import { createMessage } from "@datafactory/message";
 import { validateJsonSchema } from "@helpers/validateJsonSchema";
 import { validateAgainstSchema } from "@helpers/validateAgainstSchema";
-import { HttpCodes } from "../../data/global-constans";
+import { HttpCodes } from "../../global-data/global-constans";
 
 test.describe("message/ GET requests @message", async () => {
   let message;

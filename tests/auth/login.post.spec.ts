@@ -1,7 +1,7 @@
 import { test, expect } from "@fixtures/fixtures";
 import BaseAuthTests from "./BaseAuthTest";
 import { APIRequestContext } from "@playwright/test";
-import { HttpCodes, RequestTimeouts } from "../../data/global-constans";
+import { HttpCodes, RequestTimeouts } from "../../global-data/global-constans";
 
 class AuthLoginTests extends BaseAuthTests {
   constructor(baseUrl: string, requestContext: APIRequestContext) {

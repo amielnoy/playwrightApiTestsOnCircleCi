@@ -6,7 +6,7 @@ import { defaultBranding, defaultBrandingShortLogo, updatedBranding } from "@hel
 import { createHeaders } from "@helpers/createHeaders";
 import { validateJsonSchema } from "@helpers/validateJsonSchema";
 import { validateAgainstSchema } from "@helpers/validateAgainstSchema";
-import { HttpCodes } from "../../data/global-constans";
+import { HttpCodes } from "../../global-data/global-constans";
 
 test.describe("branding/ GET requests @branding", async () => {
   const defaultBodyShort = defaultBrandingShortLogo;

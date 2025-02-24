@@ -9,7 +9,7 @@ describe("schemaHelperFunctions Integration Tests", () => {
       fs.unlink(inputFile);
     });
 
-    test("writeJsonFile should write data properly to the given path", async () => {
+    test("writeJsonFile should write global-data properly to the given path", async () => {
       const mockedData = JSON.stringify({ some: "MockedField" });
 
       await writeJsonFile(inputFile, mockedData);

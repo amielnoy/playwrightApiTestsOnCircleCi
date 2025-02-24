@@ -26,7 +26,7 @@ export function stringDateByDays(date?: Date, days = 0) {
 
 /**
  * Function takes a date as a string and validates that it can be parsed by Date.parse()
- * It returns a true or false, great for asserting of the data is properly formatted.
+ * It returns a true or false, great for asserting of the global-data is properly formatted.
  */
 function isValidDate(date: string) {
   if (Date.parse(date)) {
@@ -45,7 +45,7 @@ export function convertToEpoch(date: string): number | bigint {
 
 /*
   it's hard to predict what date some parameters are and if they are even a date
-  instead we get them in an array and iterate to check 
+  instead we get them in an array and iterate to check
   if they are either a string or null
 */
 export function checkObjectDateValues(object) {

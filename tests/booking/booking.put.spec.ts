@@ -7,7 +7,7 @@ import { createHeaders, createInvalidHeaders } from "@helpers/createHeaders";
 import { createRoom } from "@datafactory/room";
 import { validateJsonSchema } from "@helpers/validateJsonSchema";
 import { validateAgainstSchema } from "@helpers/validateAgainstSchema";
-import { HttpCodes } from "../../data/global-constans";
+import { HttpCodes } from "../../global-data/global-constans";
 
 test.describe("booking/{id} PUT requests @booking", async () => {
   let headers;

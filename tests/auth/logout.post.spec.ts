@@ -2,7 +2,7 @@
 
 import { test, expect } from "@playwright/test";
 import { createToken } from "@datafactory/auth";
-import { HttpCodes } from "../../data/global-constans";
+import { HttpCodes } from "../../global-data/global-constans";
 
 test.describe("auth/logout POST requests @auth", async () => {
   let token: string;

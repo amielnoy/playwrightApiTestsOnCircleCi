@@ -5,7 +5,7 @@ import { createRoom, defaultRoom } from "@datafactory/room";
 import { validateAgainstSchema } from "@helpers/validateAgainstSchema";
 import { validateJsonSchema } from "@helpers/validateJsonSchema";
 import { test, expect } from "@fixtures/fixtures";
-import { HttpCodes } from "../../data/global-constans";
+import { HttpCodes } from "../../global-data/global-constans";
 
 test.describe("room/ GET requests @room", async () => {
   let room;

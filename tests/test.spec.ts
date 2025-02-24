@@ -2,7 +2,7 @@ import { test, expect } from "@fixtures/fixtures";
 import { expect as arrayExpect1 } from "@playwright/test";
 import { expect as arrayExpect2 } from "../expects/customMatchers";
 
-import { HttpCodes } from "../data/global-constans"; // Import the custom matchers definition
+import { HttpCodes } from "../global-data/global-constans"; // Import the custom matchers definition
 
 test.describe("Custom Assertions", async () => {
   test("with fixtures", async ({ request }) => {

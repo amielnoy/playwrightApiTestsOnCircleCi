@@ -3,7 +3,7 @@ import { stringDateByDays } from "@helpers/date";
 import { faker } from "@faker-js/faker";
 import { createHeaders } from "@helpers/createHeaders";
 import Env from "@helpers/env";
-import { HttpCodes } from "../../data/global-constans";
+import { HttpCodes } from "../../global-data/global-constans";
 
 const url = Env.URL || "https://automationintesting.online/";
 let bookingBody;

@@ -10,12 +10,12 @@ let cookies;
    *
    * @example
    * import { createCookies } from "../datafactory/auth";
-   *  
+   *
    * const cookies = createCookies("Happy", "Mcpassword")
-   * 
+   *
    * const response = await request.put(`booking/${bookingId}`, {
       headers: { cookie: cookies },
-      data: body,
+      global-data: body,
     });
    */
 export async function createCookies(username?: string, password?: string) {
@@ -46,11 +46,11 @@ export async function createCookies(username?: string, password?: string) {
    *
    * @example
    * import { createToken } from "../datafactory/auth";
-   *  
+   *
    * const token = createToken("Happy", "Mcpassword")
-   * 
+   *
    * const response = await request.post("auth/validate", {
-      data: { token: token },
+      global-data: { token: token },
     });
    */
 export async function createToken(username?: string, password?: string) {

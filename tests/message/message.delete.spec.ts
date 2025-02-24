@@ -3,7 +3,7 @@
 import { createMessage } from "@datafactory/message";
 import { createHeaders } from "@helpers/createHeaders";
 import { test, expect } from "@playwright/test";
-import { HttpCodes } from "../../data/global-constans";
+import { HttpCodes } from "../../global-data/global-constans";
 
 test.describe("message/ DELETE requests @message", async () => {
   let message;
